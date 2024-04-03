@@ -6,10 +6,12 @@ authors = ["Juan Martínez <dahbura.ml@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.8.1,<3.11"
+python = ">=3.8.1,<3.9.7 || >3.9.7,<3.11"
 langchain-core = "^0.1.36"
 langchain-anthropic = "^0.1.4"
 python-dotenv = "^1.0.1"
+streamlit = "^1.32.2"
+langchain = "^0.1.14"
 
 [build-system]
 requires = ["poetry-core"]

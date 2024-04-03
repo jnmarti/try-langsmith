@@ -1,6 +1,4 @@
 import streamlit as st
-from dotenv import load_dotenv
-load_dotenv()
 from uuid import uuid4
 
 from langchain_anthropic import ChatAnthropic
