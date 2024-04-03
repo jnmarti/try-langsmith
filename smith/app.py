@@ -34,7 +34,7 @@ def add_negative_feedback():
     add_feedback(score=0)
     st.toast("Thanks for your feedback!")
 
-st.title("Echo bot")
+st.title("Dummy Bot")
 
 if "llm" not in st.session_state:
     st.session_state["llm"] = ChatAnthropic(model="claude-3-haiku-20240307")
