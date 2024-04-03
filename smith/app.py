@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 from uuid import uuid4
 
@@ -12,7 +13,7 @@ client = Client()
     
 def add_feedback(score):
     runs = client.list_runs(
-        project_name="smith-project",
+        project_name=os.environ["LANGCHAIN_PROJECT"],
         run_type="chain",
     )
 
